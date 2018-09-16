@@ -17,6 +17,6 @@ app.get('*',function(request,response){
 });
 
 
-app.listen(app.get('port'), function() {
-  console.log("Node server is running at localhost:" + app.get('port'));
+app.listen(app.get('port'),process.env.IP,function() {
+  console.log("Node server is running at localhost:" + app.get('port')+" "+process.env.IP);
 });
