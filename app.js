@@ -9,7 +9,11 @@ app.set('view engine', 'ejs');
 
 
 app.get('/', function(request, response) {
-  response.render("index.ejs");
+  response.render("pages/index.ejs");
+});
+
+app.get('/about', function(request, response) {
+  response.render("pages/about.ejs");
 });
 
 app.get('*',function(request,response){
