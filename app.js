@@ -25,7 +25,7 @@ app.get('/faculty', function(request, response) {
 });
 
 app.get('*',function(request,response){
-  response.send(404,"not found");
+  response.status(404).send("not found");
 });
 
 
