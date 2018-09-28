@@ -16,6 +16,14 @@ app.get('/about', function(request, response) {
   response.render("pages/about.ejs");
 });
 
+app.get('/administration', function(request, response) {
+  response.render("pages/administration.ejs");
+});
+
+app.get('/faculty', function(request, response) {
+  response.render("pages/faculty.ejs");
+});
+
 app.get('*',function(request,response){
   response.send(404,"not found");
 });
