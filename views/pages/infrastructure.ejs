@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <% var page = "About"%>
+  <% include ../partials/header/head.ejs %>
+  <style>
+  table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 15px;
+  }
+  tr#t01{
+  	width:50%;
+  	background-color:rgb(60,60,60);
+  	color:white;
+  	font-family:Verdana; font-size:10pt;
+  }
+
+  </style>
+  </head>
+</head>
+<body>
+  <% include ../partials/header/nav.ejs %>
+  <!-- For loop for all departments-->
+
+  </html><section class="course-area padding-top" id="courses">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2 col-sm-12 col-xs-12">
+          <div class="area-title text-center wow fadeIn">
+            <table >
+              <tr  id="t01">
+                <th >Faculty Name</th>
+                <th >Designation</th>
+                <th >Committee Designation</th>
+                <th >Mobile No./ Office No.</th>
+              </tr>
+            <script language="javascript" type="text/javascript" >
+            var text = "";
+            var i,j;
+
+            /*<td colspan="2" ></td>*/
+            for (i = 0; i < 5; i++) {
+            document.write( "<tr>");
+            for(j=0;j<4;j++)
+            {
+
+            document.write( "<td>"+"The number is " + i+"</td>");
+
+            }
+            document.write( "</tr>");
+            }
+
+            </script>
+
+
+
+
+            </table>
+
+          </div>
+        </div>
+      </div>
+
+        <!--end forloop -->
+  <% include ../partials/footer/footer.ejs %>
+</body>
