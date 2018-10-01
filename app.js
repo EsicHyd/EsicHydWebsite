@@ -24,6 +24,26 @@ app.get('/faculty', function(request, response) {
   response.render("pages/faculty.ejs");
 });
 
+app.get('/awards', function(request, response) {
+  response.render("pages/awards&honors.ejs");
+});
+
+app.get('/commities', function(request, response) {
+  response.render("pages/commities.ejs");
+});
+
+app.get('/media', function(request, response) {
+  response.render("pages/media.ejs");
+});
+
+app.get('/approval', function(request, response) {
+  response.render("pages/approval.ejs");
+});
+
+app.get('/infrastructure', function(request, response) {
+  response.render("pages/infrastructure.ejs");
+});
+
 app.get('*',function(request,response){
   response.render("pages/404.ejs");
 });
