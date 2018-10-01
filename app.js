@@ -24,6 +24,10 @@ app.get('/faculty', function(request, response) {
   response.render("pages/faculty.ejs");
 });
 
+app.get('/awards', function(request, response) {
+  response.render("pages/awards&honors.ejs");
+});
+
 app.get('*',function(request,response){
   response.status(404).send("not found");
 });
