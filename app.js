@@ -45,7 +45,7 @@ app.get('/infrastructure', function(request, response) {
 });
 
 app.get('*',function(request,response){
-  response.status(404).send("not found");
+  response.render("pages/404.ejs");
 });
 
 
